@@ -1,9 +1,19 @@
-import { View, Text } from "react-native";
+import Tiles from "../components/Tiles/Tiles";
 
-const HomeScreen = () => {
+import { categories } from '../constants/Categories';
+
+import Theme from "../Theme/Theme";
+
+const HomeScreen = ({ navigation }) => {
   return (
-    <View className="bg-dark"><Text>HomeScreen</Text></View>
-  )
+    <Theme>
+        <Tiles 
+            list={ categories } 
+            navigation={ navigation }
+            paddingHorizontal={ 18 }
+        />
+    </Theme>
+  );
 }
 
 export default HomeScreen;
