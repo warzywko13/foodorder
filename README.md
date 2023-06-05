@@ -29,6 +29,10 @@ Aby uruchomić projekt na naszym komputerze lokalnym potrzebujemy:
 Następnie należy w terminalu uruchomić komendę:
 
 ```javascript 
+npm install
+```
+
+```javascript 
 npm start
 ```
 
